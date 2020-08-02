@@ -6,12 +6,12 @@ function reducer(state=initialState, action) {
         case ADD:
             return {
                 ...state,
-                num: state.num + 1
+                num: state.num + action.num
             };
         case SUB:
             return {
                 ...state,
-                num: state.num - 1
+                num: state.num - action.num
             }
         default:
             return state;
